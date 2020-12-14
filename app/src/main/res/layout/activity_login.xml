@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="@string/app_name_logo"
+    tools:context=".activity.Login_Activity">
+
+    <ImageView
+        android:id="@+id/l_logo"
+        android:layout_width="166dp"
+        android:layout_height="215dp"
+        android:contentDescription="@string/app_name_logo"
+        app:layout_constraintBottom_toTopOf="@+id/l_input_email"
+        app:layout_constraintEnd_toEndOf="@+id/l_input_email"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/l_input_email"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:srcCompat="@drawable/ic_logo"
+        tools:srcCompat="@drawable/ic_logo" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/l_input_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/am_btn_esp_lado"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="@dimen/am_btn_esp_lado"
+        android:layout_marginBottom="15dp"
+        android:hint="@string/txt_useremail"
+        app:boxBackgroundColor="@color/common_google_signin_btn_text_dark_default"
+        app:boxBackgroundMode="outline"
+        app:hintTextColor="@color/am_black"
+        app:layout_constraintBottom_toTopOf="@+id/l_input_senha"
+        app:layout_constraintEnd_toEndOf="@+id/l_input_senha"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/l_input_senha"
+        app:layout_constraintTop_toBottomOf="@+id/l_logo">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/l_edit_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/l_input_senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/am_btn_esp_lado"
+        android:layout_marginEnd="@dimen/am_btn_esp_lado"
+        android:layout_marginBottom="15dp"
+        android:hint="@string/txt_usersenha"
+        app:boxBackgroundColor="@color/common_google_signin_btn_text_dark_default"
+        app:boxBackgroundMode="outline"
+        app:hintTextColor="@color/am_black"
+        app:layout_constraintBottom_toTopOf="@+id/l_btn_entrar"
+        app:layout_constraintEnd_toEndOf="@+id/l_btn_entrar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/l_btn_entrar"
+        app:layout_constraintTop_toBottomOf="@+id/l_input_email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/l_edit_senha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/l_btn_entrar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/am_btn_height"
+        android:layout_marginStart="@dimen/am_btn_esp_lado"
+        android:layout_marginEnd="@dimen/am_btn_esp_lado"
+        android:layout_marginBottom="5dp"
+        android:text="@string/btn_entrar"
+        app:backgroundTint="@color/am_black"
+        app:layout_constraintBottom_toTopOf="@+id/l_btn_cadastrar"
+        app:layout_constraintEnd_toEndOf="@+id/l_btn_cadastrar"
+        app:layout_constraintStart_toStartOf="@+id/l_btn_cadastrar"
+        app:layout_constraintTop_toBottomOf="@+id/l_input_senha" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/l_btn_cadastrar"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/am_btn_height"
+        android:layout_marginStart="@dimen/am_btn_esp_lado"
+        android:layout_marginEnd="@dimen/am_btn_esp_lado"
+        android:onClick="criarCadastro"
+        android:text="@string/btn_cadastrar"
+        android:textColor="@color/am_black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/l_btn_entrar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

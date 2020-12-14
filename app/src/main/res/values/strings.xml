@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Aíma</string>
+    <string name="app_name_logo">Logo Aíma</string>
+
+    <string name="btn_entrar">Entrar</string>
+    <string name="btn_cadastrar">Cadastre-se</string>
+    <string name="btn_next">Próximo passo</string>
+
+    <string name="txt_username">Nome</string>
+    <string name="txt_useremail">E-mail</string>
+    <string name="txt_usergenero">Identidade de gênero (opcional)</string>
+    <string name="txt_usersenha">Senha</string>
+</resources>

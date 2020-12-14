@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "997458621677",
+    "project_id": "aima-f7c30",
+    "storage_bucket": "aima-f7c30.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:997458621677:android:9f49d8511e2eca935708e4",
+        "android_client_info": {
+          "package_name": "com.ai.app.aima"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "997458621677-itbvcpd21gig44df9usmir2ocmgehgif.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ai.app.aima",
+            "certificate_hash": "afef49986e13183753cb18ba303defe65470ab4b"
+          }
+        },
+        {
+          "client_id": "997458621677-5ke8vtk83kt3qu3lh51h7uu7b2ctisrq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKzG6BhEK0PT_SNghNBeuaumNsoyIMQZk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "997458621677-5ke8vtk83kt3qu3lh51h7uu7b2ctisrq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
