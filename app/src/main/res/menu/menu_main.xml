@@ -6,4 +6,5 @@
         android:title="Sair"
         app:showAsAction="always"
         android:icon="@drawable/ic_power_off_24"/>
+
 </menu>

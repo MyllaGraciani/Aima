@@ -30,22 +30,28 @@ android {
 
 dependencies {
 
-    api 'com.google.android.material:material:1.1.0-alpha06'
+    api 'com.google.android.material:material:1.3.0-alpha04'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'com.google.android.material:material:1.2.1'
-    
+
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
 
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
+    //dependencias firebase
     implementation platform('com.google.firebase:firebase-bom:26.1.1')
     implementation 'com.google.firebase:firebase-analytics'
     implementation 'com.google.firebase:firebase-database'
     implementation 'com.google.firebase:firebase-storage'
     implementation 'com.google.firebase:firebase-auth'
+
+    //dependencias menu navegacao
+    implementation 'com.github.ittianyu:BottomNavigationViewEx:2.0.4'
+
 
 }
 

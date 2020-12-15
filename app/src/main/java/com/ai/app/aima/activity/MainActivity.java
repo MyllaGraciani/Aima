@@ -8,12 +8,11 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Toolbar;
 
 import com.ai.app.aima.R;
 import com.ai.app.aima.firebase.ConfiguracaoFirebase;
 import com.google.firebase.auth.FirebaseAuth;
+import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
 public class MainActivity extends AppCompatActivity {
     private FirebaseAuth autenticar;
@@ -26,6 +25,21 @@ public class MainActivity extends AppCompatActivity {
         setUpToolbar();
         //firebase
         autenticar = ConfiguracaoFirebase.getRefAutenticar();
+    }
+
+    private void configBottomNavigationView(){
+        BottomNavigationViewEx bottomNavigationViewEx = findViewById(R.id.bottom_navigation);
+
+
+
+    }
+
+    private void deslogarUser(){
+        try {
+            autenticar.signOut();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
     @Override
@@ -44,14 +58,6 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
         return super.onOptionsItemSelected(item);
-    }
-
-    private void deslogarUser(){
-        try {
-            autenticar.signOut();
-        }catch (Exception e){
-            e.printStackTrace();
-        }
     }
 
     private void setUpToolbar() {
