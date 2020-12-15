@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/ic_ciclo"
+        android:title="ic_ciclo"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_power_off_24"/>
+
+    <item android:id="@+id/ic_dicas"
+        android:title="ic_dicas"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_power_off_24"/>
+
+    <item android:id="@+id/ic_notes"
+        android:title="ic_notes"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_power_off_24"/>
+
+    <item android:id="@+id/ic_humor"
+        android:title="ic_humor"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_power_off_24"/>
+
+    <item android:id="@+id/ic_perfil"
+        android:title="ic_perfil"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_power_off_24"/>
+
+</menu>
