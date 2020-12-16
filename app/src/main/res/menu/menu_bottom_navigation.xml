@@ -3,28 +3,28 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item android:id="@+id/ic_ciclo"
-        android:title="ic_ciclo"
+        android:title="@string/nav_menu_home"
         app:showAsAction="ifRoom"
-        android:icon="@drawable/ic_power_off_24"/>
+        android:icon="@drawable/ic_home_24"/>
 
     <item android:id="@+id/ic_dicas"
-        android:title="ic_dicas"
+        android:title="@string/nav_menu_notes"
         app:showAsAction="ifRoom"
-        android:icon="@drawable/ic_power_off_24"/>
+        android:icon="@drawable/ic_notes_24"/>
 
     <item android:id="@+id/ic_notes"
-        android:title="ic_notes"
+        android:title="@string/nav_menu_ciclo"
         app:showAsAction="ifRoom"
-        android:icon="@drawable/ic_power_off_24"/>
+        android:icon="@drawable/ic_ciclo_24"/>
 
     <item android:id="@+id/ic_humor"
-        android:title="ic_humor"
+        android:title="@string/nav_menu_conhecimentos"
         app:showAsAction="ifRoom"
-        android:icon="@drawable/ic_power_off_24"/>
+        android:icon="@drawable/ic_ideia_24"/>
 
     <item android:id="@+id/ic_perfil"
-        android:title="ic_perfil"
+        android:title="@string/nav_menu_perfil"
         app:showAsAction="ifRoom"
-        android:icon="@drawable/ic_power_off_24"/>
+        android:icon="@drawable/ic_perfil_24"/>
 
 </menu>
