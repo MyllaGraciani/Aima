@@ -2,22 +2,22 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item android:id="@+id/ic_ciclo"
+    <item android:id="@+id/ic_home"
         android:title="@string/nav_menu_home"
         app:showAsAction="ifRoom"
         android:icon="@drawable/ic_home_24"/>
 
-    <item android:id="@+id/ic_dicas"
+    <item android:id="@+id/ic_notes"
         android:title="@string/nav_menu_notes"
         app:showAsAction="ifRoom"
         android:icon="@drawable/ic_notes_24"/>
 
-    <item android:id="@+id/ic_notes"
+    <item android:id="@+id/ic_ciclo"
         android:title="@string/nav_menu_ciclo"
         app:showAsAction="ifRoom"
         android:icon="@drawable/ic_ciclo_24"/>
 
-    <item android:id="@+id/ic_humor"
+    <item android:id="@+id/ic_ideias"
         android:title="@string/nav_menu_conhecimentos"
         app:showAsAction="ifRoom"
         android:icon="@drawable/ic_ideia_24"/>
