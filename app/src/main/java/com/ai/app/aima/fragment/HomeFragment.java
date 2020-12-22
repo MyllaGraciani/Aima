@@ -54,33 +54,11 @@ public class HomeFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        instFragmentCiclo();
-        instFragmentHumor();
-        instFragmentSintomas();
-
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
     }
-
-    private void instFragmentCiclo(){
-        FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.viewCiclo, new CicloFragment()).commit();
-    }
-    private void instFragmentHumor(){
-        FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.viewHumores, new HumoresFragment()).commit();
-    }
-
-    private void instFragmentSintomas(){
-        FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.viewSintomas, new SintomasFragment()).commit();
-    }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
