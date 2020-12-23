@@ -7,6 +7,19 @@
     tools:context=".fragment.CicloFragment">
 
     <RelativeLayout
+        android:id="@+id/boardMuco"
+        android:layout_width="179dp"
+        android:layout_height="40dp"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/card_white"
+        app:layout_constraintEnd_toStartOf="@+id/boardSexo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boardTempepeso" />
+
+    <RelativeLayout
         android:id="@+id/boardCalendar"
         android:layout_width="375dp"
         android:layout_height="370dp"
@@ -31,9 +44,9 @@
         app:layout_constraintTop_toTopOf="@+id/boardCalendar" />
 
     <RelativeLayout
-        android:id="@+id/whiteTemperatura"
-        android:layout_width="372dp"
-        android:layout_height="117dp"
+        android:id="@+id/boardTempepeso"
+        android:layout_width="375dp"
+        android:layout_height="40dp"
 
         android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
@@ -47,36 +60,102 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/whiteBottom2"
-        android:layout_width="171dp"
-        android:layout_height="146dp"
+        android:id="@+id/boardSexo"
+        android:layout_width="191dp"
+        android:layout_height="40dp"
 
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
         android:background="@drawable/card_white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/whiteBottom1"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/whiteTemperatura"
-        app:layout_constraintVertical_bias="0.0">
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/whiteBottom1"
-        android:layout_width="171dp"
-        android:layout_height="146dp"
-
-        android:layout_marginTop="20dp"
-        android:background="@drawable/card_white"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/whiteBottom2"
-        app:layout_constraintTop_toBottomOf="@+id/whiteTemperatura"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintStart_toEndOf="@+id/boardMuco"
+        app:layout_constraintTop_toBottomOf="@+id/boardTempepeso">
 
     </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtTemperatura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/temperatura"
+        android:textColor="@color/am_black"
+        app:layout_constraintBottom_toBottomOf="@+id/boardTempepeso"
+        app:layout_constraintEnd_toStartOf="@+id/inputTemperatura"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/boardTempepeso"
+        app:layout_constraintTop_toTopOf="@+id/boardTempepeso" />
+
+    <EditText
+        android:id="@+id/inputTemperatura"
+        android:layout_width="52dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="@string/numDefault"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/am_black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/boardTempepeso"
+        app:layout_constraintEnd_toStartOf="@+id/txtPeso"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtTemperatura"
+        app:layout_constraintTop_toTopOf="@+id/boardTempepeso" />
+
+    <EditText
+        android:id="@+id/inputPeso"
+        android:layout_width="52dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/numDefault"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/am_black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/boardTempepeso"
+        app:layout_constraintEnd_toStartOf="@+id/boardTempepeso"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtPeso"
+        app:layout_constraintTop_toTopOf="@+id/boardTempepeso" />
+
+    <TextView
+        android:id="@+id/txtPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/peso"
+        android:textColor="@color/am_black"
+        app:layout_constraintBottom_toBottomOf="@+id/boardTempepeso"
+        app:layout_constraintEnd_toStartOf="@+id/inputPeso"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/inputTemperatura"
+        app:layout_constraintTop_toTopOf="@+id/boardTempepeso" />
+
+    <TextView
+        android:id="@+id/txtSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/txtSexo"
+        android:textColor="@color/am_black"
+        app:layout_constraintBottom_toBottomOf="@+id/boardSexo"
+        app:layout_constraintStart_toStartOf="@+id/boardSexo"
+        app:layout_constraintTop_toTopOf="@+id/boardSexo" />
+
+    <TextView
+        android:id="@+id/txtMuco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/txtMuco"
+        android:textColor="@color/am_black"
+        app:layout_constraintBottom_toBottomOf="@+id/boardMuco"
+        app:layout_constraintStart_toStartOf="@+id/boardMuco"
+        app:layout_constraintTop_toTopOf="@+id/boardMuco" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
