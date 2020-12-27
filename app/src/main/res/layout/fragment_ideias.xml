@@ -6,94 +6,121 @@
     android:layout_height="match_parent"
     tools:context=".fragment.IdeiasFragment">
 
-    <RelativeLayout
+    <Button
         android:id="@+id/btnSintomas"
         android:layout_width="141dp"
         android:layout_height="134dp"
         android:background="@drawable/card_white"
+        android:text="Sintomas"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btnHumores"
         app:layout_constraintTop_toBottomOf="@+id/btnMedicamentos" />
 
-    <RelativeLayout
+    <Button
         android:id="@+id/btnHumores"
         android:layout_width="141dp"
         android:layout_height="134dp"
         android:background="@drawable/card_white"
+        android:text="Humores"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnSintomas"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnLua" />
 
-    <RelativeLayout
+    <Button
         android:id="@+id/btnMedicamentos"
         android:layout_width="141dp"
         android:layout_height="134dp"
         android:background="@drawable/card_white"
+        android:text="Medicamento"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/btnSintomas"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btnLua"
-        app:layout_constraintTop_toBottomOf="@+id/btnAutocuidado" />
+        app:layout_constraintTop_toBottomOf="@+id/btnAutocuidado" >
 
-    <RelativeLayout
+    </Button>
+
+    <Button
         android:id="@+id/btnLua"
         android:layout_width="141dp"
         android:layout_height="134dp"
         android:background="@drawable/card_white"
+        android:text="Lua"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/btnHumores"
         app:layout_constraintEnd_toStartOf="@+id/btnMedicamentos"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnHigiene" />
 
-    <RelativeLayout
+    <Button
         android:id="@+id/btnAutocuidado"
         android:layout_width="141dp"
         android:layout_height="134dp"
         android:background="@drawable/card_white"
+        android:text="Auto cuidado"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/btnMedicamentos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btnHigiene"
         app:layout_constraintTop_toBottomOf="@+id/btnAlimentacao" />
 
-    <RelativeLayout
+    <Button
         android:id="@+id/btnAlimentacao"
         android:layout_width="141dp"
         android:layout_height="134dp"
         android:background="@drawable/card_white"
+        android:text="Alimentação"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/btnAutocuidado"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btnGraficos"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <RelativeLayout
+    <Button
         android:id="@+id/btnGraficos"
         android:layout_width="141dp"
         android:layout_height="134dp"
         android:background="@drawable/card_white"
+        android:text="Gráficos"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/btnHigiene"
         app:layout_constraintEnd_toStartOf="@+id/btnAlimentacao"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-    </RelativeLayout>
+    </Button>
 
-    <RelativeLayout
+    <Button
         android:id="@+id/btnHigiene"
         android:layout_width="141dp"
         android:layout_height="134dp"
         android:background="@drawable/card_white"
+        android:text="Higiene"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/btnLua"
         app:layout_constraintEnd_toStartOf="@+id/btnAutocuidado"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnGraficos" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
