@@ -8,16 +8,37 @@
 
     <RelativeLayout
         android:id="@+id/boardMuco"
-        android:layout_width="179dp"
+        android:layout_width="185dp"
         android:layout_height="40dp"
-
         android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
         android:background="@drawable/card_white"
         app:layout_constraintEnd_toStartOf="@+id/boardSexo"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/boardTempepeso" />
+
+    <RelativeLayout
+        android:id="@+id/boardTemperatura"
+        android:layout_width="185dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/card_white"
+        app:layout_constraintEnd_toStartOf="@+id/boardPeso"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boardMuco" />
+
+    <RelativeLayout
+        android:id="@+id/boardPeso"
+        android:layout_width="185dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/card_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boardSexo" />
 
     <RelativeLayout
         android:id="@+id/boardCalendar"
@@ -61,15 +82,13 @@
 
     <RelativeLayout
         android:id="@+id/boardSexo"
-        android:layout_width="191dp"
+        android:layout_width="185dp"
         android:layout_height="40dp"
 
         android:layout_marginTop="20dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/card_white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/boardMuco"
         app:layout_constraintTop_toBottomOf="@+id/boardTempepeso">
 
     </RelativeLayout>
@@ -78,20 +97,17 @@
         android:id="@+id/txtTemperatura"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:text="@string/temperatura"
         android:textColor="@color/am_black"
-        app:layout_constraintBottom_toBottomOf="@+id/boardTempepeso"
-        app:layout_constraintEnd_toStartOf="@+id/inputTemperatura"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toEndOf="@+id/boardTempepeso"
-        app:layout_constraintTop_toTopOf="@+id/boardTempepeso" />
+        app:layout_constraintBottom_toBottomOf="@+id/boardTemperatura"
+        app:layout_constraintStart_toStartOf="@+id/boardTemperatura"
+        app:layout_constraintTop_toTopOf="@+id/boardTemperatura" />
 
     <EditText
         android:id="@+id/inputTemperatura"
         android:layout_width="52dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
         android:ems="10"
         android:hint="@string/numDefault"
         android:importantForAutofill="no"
@@ -99,11 +115,10 @@
         android:textAlignment="center"
         android:textColor="@color/am_black"
         android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="@+id/boardTempepeso"
-        app:layout_constraintEnd_toStartOf="@+id/txtPeso"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintBottom_toBottomOf="@+id/boardTemperatura"
+        app:layout_constraintEnd_toEndOf="@+id/boardTemperatura"
         app:layout_constraintStart_toEndOf="@+id/txtTemperatura"
-        app:layout_constraintTop_toTopOf="@+id/boardTempepeso" />
+        app:layout_constraintTop_toTopOf="@+id/boardTemperatura" />
 
     <EditText
         android:id="@+id/inputPeso"
@@ -116,24 +131,21 @@
         android:textAlignment="center"
         android:textColor="@color/am_black"
         android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="@+id/boardTempepeso"
-        app:layout_constraintEnd_toStartOf="@+id/boardTempepeso"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintBottom_toBottomOf="@+id/boardPeso"
+        app:layout_constraintEnd_toEndOf="@+id/boardPeso"
         app:layout_constraintStart_toEndOf="@+id/txtPeso"
-        app:layout_constraintTop_toTopOf="@+id/boardTempepeso" />
+        app:layout_constraintTop_toTopOf="@+id/boardPeso" />
 
     <TextView
         android:id="@+id/txtPeso"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="8dp"
         android:text="@string/peso"
         android:textColor="@color/am_black"
-        app:layout_constraintBottom_toBottomOf="@+id/boardTempepeso"
-        app:layout_constraintEnd_toStartOf="@+id/inputPeso"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/inputTemperatura"
-        app:layout_constraintTop_toTopOf="@+id/boardTempepeso" />
+        app:layout_constraintBottom_toBottomOf="@+id/boardPeso"
+        app:layout_constraintStart_toStartOf="@+id/boardPeso"
+        app:layout_constraintTop_toTopOf="@+id/boardPeso" />
 
     <TextView
         android:id="@+id/txtSexo"
@@ -156,6 +168,17 @@
         app:layout_constraintBottom_toBottomOf="@+id/boardMuco"
         app:layout_constraintStart_toStartOf="@+id/boardMuco"
         app:layout_constraintTop_toTopOf="@+id/boardMuco" />
+
+    <TextView
+        android:id="@+id/txtFluxo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Nível do fluxo:"
+        android:textColor="@color/am_black"
+        app:layout_constraintBottom_toBottomOf="@+id/boardTempepeso"
+        app:layout_constraintStart_toStartOf="@+id/boardTempepeso"
+        app:layout_constraintTop_toTopOf="@+id/boardTempepeso" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

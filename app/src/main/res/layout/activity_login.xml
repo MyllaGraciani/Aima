@@ -79,6 +79,7 @@
         android:layout_marginEnd="@dimen/am_btn_esp_lado"
         android:layout_marginBottom="5dp"
         android:text="@string/btn_entrar"
+        android:textColor="@color/am_white"
         app:backgroundTint="@color/am_black"
         app:layout_constraintBottom_toTopOf="@+id/l_btn_cadastrar"
         app:layout_constraintEnd_toEndOf="@+id/l_btn_cadastrar"

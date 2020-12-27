@@ -27,7 +27,7 @@
 
         android:layout_height="136dp"
         android:layout_marginTop="44dp"
-        android:background="#ffffff"
+        android:background="@drawable/am_background"
 
         android:contentDescription="@string/app_name_logo"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,8 +36,8 @@
 
         app:layout_constraintTop_toTopOf="parent"
 
-        app:srcCompat="@color/am_red"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:srcCompat="@drawable/ic_person_24"
+        tools:srcCompat="@drawable/ic_person_24" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/c_input_name"
@@ -140,8 +140,9 @@
 
         android:text="@string/btn_cadastrar"
 
-        app:backgroundTint="@color/am_black"
+        android:textColor="@color/am_white"
 
+        app:backgroundTint="@color/am_black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
