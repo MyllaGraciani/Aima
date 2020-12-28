@@ -18,14 +18,39 @@
     <string name="nav_menu_perfil">Perfil</string>
 
 
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
-
-
     <string name="numDefault">0</string>
     <string name="temperatura">Temperatura:</string>
     <string name="peso">Peso:</string>
     <string name="txtSexo">Sexo:</string>
     <string name="txtMuco">Muco:</string>
+
+    <string name="nt_btnSintoma">Adicionar sintomas do dia</string>
+    <string name="nt_btnHumor">Adicionar humores do dia</string>
+    <string name="nt_btnNotes">Adicionar anotação sobre o dia</string>
+
+    <string name="txtSintomas">Sintomas</string>
+    <string name="txtHumores">Humores</string>
+    <string name="txtMedicamento">Medicamento</string>
+    <string name="txtLua">Lua</string>
+    <string name="txtAuto_cuidado">Auto cuidado</string>
+    <string name="txtAlimentacao">Alimentação</string>
+    <string name="txtGrafico">Gráficos</string>
+    <string name="txtHigiene">Higiene</string>
+
+    <string name="txtDiaPeriodo">1</string>
+    <string name="txtDia">dia</string>
+    <string name="txtPeriodoFluxo">do seu período menstrual</string>
+    <string name="txtPeriodo">Período</string>
+    <string name="bg_rosa">círculo rosa</string>
+
+    <string name="pf_txtAbout">Sobre o APP</string>
+    <string name="pf_txtDuvidas">Dúvidas</string>
+    <string name="pf_txtDefinicoes">Definições</string>
+    <string name="pf_txtEditarPerfil">Editar perfil</string>
+    <string name="pf_txtUserGenero">Identidade de genêro:</string>
+    <string name="pf_txtIdade">Idade:</string>
+    <string name="pf_txtNome">Nome:</string>
+    <string name="pf_txtDescAvatar">Avatar do usuário</string>
+    <string name="pf_txtBg_preto">bg preto</string>
+    <string name="ci_txtNivelFluxo">Nível do fluxo:</string>
 </resources>

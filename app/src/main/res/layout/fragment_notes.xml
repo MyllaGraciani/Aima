@@ -7,42 +7,42 @@
     tools:context=".fragment.NotesFragment">
 
     <Button
-        android:id="@+id/btnSintoma"
+        android:id="@+id/nt_btnSintoma"
         android:layout_width="0dp"
         android:layout_height="137dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:text="adicionar sintomas do dia"
+        android:text="@string/nt_btnSintoma"
         android:textColor="@color/am_white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnHumor" />
+        app:layout_constraintTop_toBottomOf="@+id/nt_btnHumor" />
 
     <Button
-        android:id="@+id/btnHumor"
+        android:id="@+id/nt_btnHumor"
         android:layout_width="0dp"
         android:layout_height="137dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:text="Adicionar humores do dia"
+        android:text="@string/nt_btnHumor"
         android:textColor="@color/am_white"
-        app:layout_constraintBottom_toTopOf="@+id/btnSintoma"
+        app:layout_constraintBottom_toTopOf="@+id/nt_btnSintoma"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnNotes" />
+        app:layout_constraintTop_toBottomOf="@+id/nt_btnNotes" />
 
     <Button
-        android:id="@+id/btnNotes"
+        android:id="@+id/nt_btnNotes"
         android:layout_width="0dp"
         android:layout_height="137dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:text="Adicionar anotação sobre o dia"
+        android:text="@string/nt_btnNotes"
         android:textColor="@color/am_white"
-        app:layout_constraintBottom_toTopOf="@+id/btnHumor"
+        app:layout_constraintBottom_toTopOf="@+id/nt_btnHumor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"

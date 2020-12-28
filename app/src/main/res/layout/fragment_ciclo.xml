@@ -7,41 +7,41 @@
     tools:context=".fragment.CicloFragment">
 
     <RelativeLayout
-        android:id="@+id/boardMuco"
+        android:id="@+id/ci_boardMuco"
         android:layout_width="185dp"
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/card_white"
-        app:layout_constraintEnd_toStartOf="@+id/boardSexo"
+        app:layout_constraintEnd_toStartOf="@+id/ci_boardSexo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/boardTempepeso" />
+        app:layout_constraintTop_toBottomOf="@+id/ci_boardFluxo" />
 
     <RelativeLayout
-        android:id="@+id/boardTemperatura"
+        android:id="@+id/ci_boardTemperatura"
         android:layout_width="185dp"
         android:layout_height="39dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/card_white"
-        app:layout_constraintEnd_toStartOf="@+id/boardPeso"
+        app:layout_constraintEnd_toStartOf="@+id/ci_boardPeso"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/boardMuco" />
+        app:layout_constraintTop_toBottomOf="@+id/ci_boardMuco" />
 
     <RelativeLayout
-        android:id="@+id/boardPeso"
+        android:id="@+id/ci_boardPeso"
         android:layout_width="185dp"
         android:layout_height="39dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/card_white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/boardSexo" />
+        app:layout_constraintTop_toBottomOf="@+id/ci_boardSexo" />
 
     <RelativeLayout
-        android:id="@+id/boardCalendar"
+        android:id="@+id/ci_boardCalendar"
         android:layout_width="375dp"
         android:layout_height="370dp"
         android:layout_marginStart="16dp"
@@ -56,16 +56,16 @@
     </RelativeLayout>
 
     <CalendarView
-        android:id="@+id/calendarView"
+        android:id="@+id/ci_calendarCiclo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/boardCalendar"
-        app:layout_constraintEnd_toEndOf="@+id/boardCalendar"
-        app:layout_constraintStart_toStartOf="@+id/boardCalendar"
-        app:layout_constraintTop_toTopOf="@+id/boardCalendar" />
+        app:layout_constraintBottom_toBottomOf="@+id/ci_boardCalendar"
+        app:layout_constraintEnd_toEndOf="@+id/ci_boardCalendar"
+        app:layout_constraintStart_toStartOf="@+id/ci_boardCalendar"
+        app:layout_constraintTop_toTopOf="@+id/ci_boardCalendar" />
 
     <RelativeLayout
-        android:id="@+id/boardTempepeso"
+        android:id="@+id/ci_boardFluxo"
         android:layout_width="375dp"
         android:layout_height="40dp"
 
@@ -76,12 +76,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/boardCalendar">
+        app:layout_constraintTop_toBottomOf="@+id/ci_boardCalendar">
 
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/boardSexo"
+        android:id="@+id/ci_boardSexo"
         android:layout_width="185dp"
         android:layout_height="40dp"
 
@@ -89,23 +89,23 @@
         android:layout_marginEnd="16dp"
         android:background="@drawable/card_white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/boardTempepeso">
+        app:layout_constraintTop_toBottomOf="@+id/ci_boardFluxo">
 
     </RelativeLayout>
 
     <TextView
-        android:id="@+id/txtTemperatura"
+        android:id="@+id/ci_txtTemperatura"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="@string/temperatura"
         android:textColor="@color/am_black"
-        app:layout_constraintBottom_toBottomOf="@+id/boardTemperatura"
-        app:layout_constraintStart_toStartOf="@+id/boardTemperatura"
-        app:layout_constraintTop_toTopOf="@+id/boardTemperatura" />
+        app:layout_constraintBottom_toBottomOf="@+id/ci_boardTemperatura"
+        app:layout_constraintStart_toStartOf="@+id/ci_boardTemperatura"
+        app:layout_constraintTop_toTopOf="@+id/ci_boardTemperatura" />
 
     <EditText
-        android:id="@+id/inputTemperatura"
+        android:id="@+id/ci_inputTemperatura"
         android:layout_width="52dp"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -115,13 +115,13 @@
         android:textAlignment="center"
         android:textColor="@color/am_black"
         android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="@+id/boardTemperatura"
-        app:layout_constraintEnd_toEndOf="@+id/boardTemperatura"
-        app:layout_constraintStart_toEndOf="@+id/txtTemperatura"
-        app:layout_constraintTop_toTopOf="@+id/boardTemperatura" />
+        app:layout_constraintBottom_toBottomOf="@+id/ci_boardTemperatura"
+        app:layout_constraintEnd_toEndOf="@+id/ci_boardTemperatura"
+        app:layout_constraintStart_toEndOf="@+id/ci_txtTemperatura"
+        app:layout_constraintTop_toTopOf="@+id/ci_boardTemperatura" />
 
     <EditText
-        android:id="@+id/inputPeso"
+        android:id="@+id/ci_inputPeso"
         android:layout_width="52dp"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -131,54 +131,54 @@
         android:textAlignment="center"
         android:textColor="@color/am_black"
         android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="@+id/boardPeso"
-        app:layout_constraintEnd_toEndOf="@+id/boardPeso"
-        app:layout_constraintStart_toEndOf="@+id/txtPeso"
-        app:layout_constraintTop_toTopOf="@+id/boardPeso" />
+        app:layout_constraintBottom_toBottomOf="@+id/ci_boardPeso"
+        app:layout_constraintEnd_toEndOf="@+id/ci_boardPeso"
+        app:layout_constraintStart_toEndOf="@+id/ci_txtPeso"
+        app:layout_constraintTop_toTopOf="@+id/ci_boardPeso" />
 
     <TextView
-        android:id="@+id/txtPeso"
+        android:id="@+id/ci_txtPeso"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="@string/peso"
         android:textColor="@color/am_black"
-        app:layout_constraintBottom_toBottomOf="@+id/boardPeso"
-        app:layout_constraintStart_toStartOf="@+id/boardPeso"
-        app:layout_constraintTop_toTopOf="@+id/boardPeso" />
+        app:layout_constraintBottom_toBottomOf="@+id/ci_boardPeso"
+        app:layout_constraintStart_toStartOf="@+id/ci_boardPeso"
+        app:layout_constraintTop_toTopOf="@+id/ci_boardPeso" />
 
     <TextView
-        android:id="@+id/txtSexo"
+        android:id="@+id/ci_txtSexo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="@string/txtSexo"
         android:textColor="@color/am_black"
-        app:layout_constraintBottom_toBottomOf="@+id/boardSexo"
-        app:layout_constraintStart_toStartOf="@+id/boardSexo"
-        app:layout_constraintTop_toTopOf="@+id/boardSexo" />
+        app:layout_constraintBottom_toBottomOf="@+id/ci_boardSexo"
+        app:layout_constraintStart_toStartOf="@+id/ci_boardSexo"
+        app:layout_constraintTop_toTopOf="@+id/ci_boardSexo" />
 
     <TextView
-        android:id="@+id/txtMuco"
+        android:id="@+id/ci_txtMuco"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="@string/txtMuco"
         android:textColor="@color/am_black"
-        app:layout_constraintBottom_toBottomOf="@+id/boardMuco"
-        app:layout_constraintStart_toStartOf="@+id/boardMuco"
-        app:layout_constraintTop_toTopOf="@+id/boardMuco" />
+        app:layout_constraintBottom_toBottomOf="@+id/ci_boardMuco"
+        app:layout_constraintStart_toStartOf="@+id/ci_boardMuco"
+        app:layout_constraintTop_toTopOf="@+id/ci_boardMuco" />
 
     <TextView
-        android:id="@+id/txtFluxo"
+        android:id="@+id/ci_txtFluxo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:text="Nível do fluxo:"
+        android:text="@string/ci_txtNivelFluxo"
         android:textColor="@color/am_black"
-        app:layout_constraintBottom_toBottomOf="@+id/boardTempepeso"
-        app:layout_constraintStart_toStartOf="@+id/boardTempepeso"
-        app:layout_constraintTop_toTopOf="@+id/boardTempepeso" />
+        app:layout_constraintBottom_toBottomOf="@+id/ci_boardFluxo"
+        app:layout_constraintStart_toStartOf="@+id/ci_boardFluxo"
+        app:layout_constraintTop_toTopOf="@+id/ci_boardFluxo" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

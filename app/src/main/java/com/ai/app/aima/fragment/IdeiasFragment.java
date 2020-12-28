@@ -32,7 +32,7 @@ public class IdeiasFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_ideias, container, false);
 
-        btnSintomas = view.findViewById(R.id.btnSintomas);
+        btnSintomas = view.findViewById(R.id.ia_btnSintomas);
 
         btnSintomas.setOnClickListener(v -> {
             Intent i = new Intent(getActivity(), Sintomas_Activity.class);
@@ -42,7 +42,7 @@ public class IdeiasFragment extends Fragment {
         return view;
     }
 
-    
+
 
 
 }

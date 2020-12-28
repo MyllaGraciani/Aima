@@ -9,52 +9,121 @@
     android:orientation="vertical"
     tools:context=".fragment.HomeFragment">
 
+    <RelativeLayout
+        android:id="@+id/hm_boardSintomas"
+        android:layout_width="182dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/card_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/hm_boardHumor"
+        app:layout_constraintTop_toBottomOf="@+id/hm_txtSintomas"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RelativeLayout
+        android:id="@+id/hm_boardHumor"
+        android:layout_width="182dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/card_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/hm_boardSintomas"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hm_txtHumores"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/hm_txtHumores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/txtHumores"
+        app:layout_constraintEnd_toStartOf="@+id/hm_txtSintomas"
+        app:layout_constraintHorizontal_bias="0.356"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hm_boardPeriodo" />
+
+    <TextView
+        android:id="@+id/hm_txtSintomas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="72dp"
+        android:text="@string/txtSintomas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hm_boardPeriodo" />
+
+    <RelativeLayout
+        android:id="@+id/hm_boardPeriodo"
+        android:layout_width="370dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/card_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hm_txtPeriod">
+
+    </RelativeLayout>
+
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/hm_bgRosa"
         android:layout_width="332dp"
         android:layout_height="289dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/bg_rosa"
         android:src="@drawable/bg_ciclo"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.08" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/periodDia"
+        android:id="@+id/hm_periodDia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="1"
+        android:text="@string/txtDiaPeriodo"
         android:textColor="@color/am_black"
         android:textSize="50sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView" />
+        app:layout_constraintBottom_toBottomOf="@+id/hm_bgRosa"
+        app:layout_constraintEnd_toEndOf="@+id/hm_bgRosa"
+        app:layout_constraintStart_toStartOf="@+id/hm_bgRosa"
+        app:layout_constraintTop_toTopOf="@+id/hm_bgRosa" />
 
     <TextView
-        android:id="@+id/txtDia"
+        android:id="@+id/hm_txtDia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="dia"
-        app:layout_constraintBottom_toTopOf="@+id/periodDia"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        android:text="@string/txtDia"
+        app:layout_constraintBottom_toTopOf="@+id/hm_periodDia"
+        app:layout_constraintEnd_toEndOf="@+id/hm_bgRosa"
         app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/hm_bgRosa"
+        app:layout_constraintTop_toTopOf="@+id/hm_bgRosa"
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/txtPeriod"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="do seu período menstrual"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/periodDia"
+        android:text="@string/txtPeriodoFluxo"
+        app:layout_constraintBottom_toBottomOf="@+id/hm_bgRosa"
+        app:layout_constraintEnd_toEndOf="@+id/hm_bgRosa"
+        app:layout_constraintStart_toStartOf="@+id/hm_bgRosa"
+        app:layout_constraintTop_toBottomOf="@+id/hm_periodDia"
         app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/hm_txtPeriod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/txtPeriodo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hm_bgRosa" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
