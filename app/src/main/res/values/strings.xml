@@ -32,7 +32,7 @@
     <string name="txtHumores">Humores</string>
     <string name="txtMedicamento">Medicamento</string>
     <string name="txtLua">Lua</string>
-    <string name="txtAuto_cuidado">Auto cuidado</string>
+    <string name="txtAuto_cuidado">Autocuidado</string>
     <string name="txtAlimentacao">Alimentação</string>
     <string name="txtGrafico">Gráficos</string>
     <string name="txtHigiene">Higiene</string>
@@ -47,7 +47,7 @@
     <string name="pf_txtDuvidas">Dúvidas</string>
     <string name="pf_txtDefinicoes">Definições</string>
     <string name="pf_txtEditarPerfil">Editar perfil</string>
-    <string name="pf_txtUserGenero">Identidade de genêro:</string>
+    <string name="pf_txtUserGenero">Identidade de gênero:</string>
     <string name="pf_txtIdade">Idade:</string>
     <string name="pf_txtNome">Nome:</string>
     <string name="pf_txtDescAvatar">Avatar do usuário</string>
