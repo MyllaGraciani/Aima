@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Aíma"
         android:fullBackupContent="true">
+
         <activity android:name=".activity.List_Activity"
             android:screenOrientation="portrait" />
 
