@@ -8,9 +8,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Aíma">
-        <activity android:name=".activity.Sintomas_Activity"
+        android:theme="@style/Theme.Aíma"
+        android:fullBackupContent="true">
+        <activity android:name=".activity.List_Activity"
             android:screenOrientation="portrait" />
+
         <activity
             android:name=".activity.Cadastro_Activity"
             android:screenOrientation="portrait" />
