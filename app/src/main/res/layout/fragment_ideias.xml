@@ -7,29 +7,29 @@
     tools:context=".fragment.IdeiasFragment">
 
     <Button
-        android:id="@+id/ia_btnSintomas"
+        android:id="@+id/ia_btnMetas"
         android:layout_width="141dp"
         android:layout_height="134dp"
         android:background="@drawable/card_white"
-        android:text="@string/txtSintomas"
+        android:text="@string/txtMetas"
         android:textColor="#FFFFFF"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/ia_btnHumores"
+        app:layout_constraintStart_toEndOf="@+id/ia_btnExames"
         app:layout_constraintTop_toBottomOf="@+id/ia_btnMedicamentos" />
 
     <Button
-        android:id="@+id/ia_btnHumores"
+        android:id="@+id/ia_btnExames"
         android:layout_width="141dp"
         android:layout_height="134dp"
         android:background="@drawable/card_white"
-        android:text="@string/txtHumores"
+        android:text="@string/txtExames"
         android:textColor="#FFFFFF"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/ia_btnSintomas"
+        app:layout_constraintEnd_toStartOf="@+id/ia_btnMetas"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ia_btnLua" />
@@ -42,7 +42,7 @@
         android:text="@string/txtMedicamento"
         android:textColor="#FFFFFF"
         android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@+id/ia_btnSintomas"
+        app:layout_constraintBottom_toTopOf="@+id/ia_btnMetas"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/ia_btnLua"
@@ -58,7 +58,7 @@
         android:text="@string/txtLua"
         android:textColor="#FFFFFF"
         android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@+id/ia_btnHumores"
+        app:layout_constraintBottom_toTopOf="@+id/ia_btnExames"
         app:layout_constraintEnd_toStartOf="@+id/ia_btnMedicamentos"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"

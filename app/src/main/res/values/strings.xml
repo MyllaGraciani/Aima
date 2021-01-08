@@ -36,6 +36,8 @@
     <string name="txtAlimentacao">Alimentação</string>
     <string name="txtGrafico">Gráficos</string>
     <string name="txtHigiene">Higiene</string>
+    <string name="txtExames">Exames médicos</string>
+    <string name="txtMetas">Metas</string>
 
     <string name="txtDiaPeriodo">1</string>
     <string name="txtDia">dia</string>
