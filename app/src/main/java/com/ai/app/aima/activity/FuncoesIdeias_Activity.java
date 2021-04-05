@@ -1,9 +1,10 @@
-package com.ai.app.aima;
+package com.ai.app.aima.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.ai.app.aima.R;
 import com.ai.app.aima.fragment.IdeiasFragment;
 
 public class FuncoesIdeias_Activity extends AppCompatActivity {

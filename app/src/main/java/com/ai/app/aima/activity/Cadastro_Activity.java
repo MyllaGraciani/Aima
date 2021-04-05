@@ -80,9 +80,19 @@ public class Cadastro_Activity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()){
-                            Toast.makeText(Cadastro_Activity.this, "Cadastro feito com sucesso!", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(getApplicationContext(), MainActivity.class));
-                            finish();
+                            try{
+
+                                //Salvar dados do user no bd
+                                String idUsuario = task.getResult().getUser().getUid();
+                                usuario.setId(idUsuario);
+                                usuario.salvar();
+
+                                Toast.makeText(Cadastro_Activity.this, "Cadastro feito com sucesso!", Toast.LENGTH_SHORT).show();
+                                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                                finish();
+                            }catch (Exception e){
+                                e.printStackTrace();
+                            }
                         }
                         else{
                               String erroException="";

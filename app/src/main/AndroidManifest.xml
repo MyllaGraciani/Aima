@@ -10,8 +10,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Aíma">
-        <activity android:name=".FuncoesIdeias_Activity"
-            android:screenOrientation="portrait"  />
+        <activity android:name=".activity.CadastroCiclo_Activity"></activity>
+        <activity
+            android:name=".activity.FuncoesIdeias_Activity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activity.List_Activity"
             android:screenOrientation="portrait" />

@@ -1,5 +1,9 @@
 package com.ai.app.aima.model;
 
+import com.ai.app.aima.firebase.ConfiguracaoFirebase;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.Exclude;
+
 public class Usuario {
     private String id;
     private String nome;
@@ -9,6 +13,12 @@ public class Usuario {
     private String srcFoto;
 
     public Usuario(){}
+
+    public void salvar(){
+        DatabaseReference firebaseRef = ConfiguracaoFirebase.getRefFirebase();
+        DatabaseReference usuariosRef = firebaseRef.child("usuario").child(getId());
+        usuariosRef.setValue(this);
+    }
 
     public String getId() {return id;}
 
@@ -26,6 +36,7 @@ public class Usuario {
 
     public void setGenero(String genero) {this.genero = genero;}
 
+    @Exclude
     public String getSenha() {return senha;}
 
     public void setSenha(String senha) {this.senha = senha;}

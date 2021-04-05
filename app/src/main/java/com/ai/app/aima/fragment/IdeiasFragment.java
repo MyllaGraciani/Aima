@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 
-import com.ai.app.aima.FuncoesIdeias_Activity;
+import com.ai.app.aima.activity.FuncoesIdeias_Activity;
 import com.ai.app.aima.R;
 
 
