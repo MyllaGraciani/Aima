@@ -7,23 +7,76 @@
     tools:context=".activity.CadastroCiclo_Activity">
 
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/l_btn_entrar2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/am_btn_height"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/btn_entrar"
+        android:textColor="@color/am_white"
+        app:backgroundTint="@color/am_black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="504dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/l_btn_cadastrar2"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/am_btn_height"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:onClick="criarCadastroCiclo"
+        android:text="Pular"
+        android:textColor="@color/am_black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/l_btn_entrar2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/back2"
+        android:layout_width="match_parent"
+        android:layout_height="121dp"
+
+        android:background="@drawable/am_background"
+
+        />
+
     <TextView
         android:id="@+id/cc_txtFluxo2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="342dp"
+        android:layout_height="37dp"
         android:text="Quando foi o seu último ciclo?"
         android:textColor="@color/am_black"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="165dp" />
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="332dp" />
+
+    <TextView
+        android:id="@+id/cc_txtFluxo3"
+        android:layout_width="342dp"
+        android:layout_height="37dp"
+        android:text="Ciclo menstrual"
+        android:textAlignment="center"
+        android:textColor="@color/am_white"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="42dp" />
 
     <TextView
         android:id="@+id/cc_txtFluxo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="346dp"
+        android:layout_height="62dp"
         android:text="Qual é a média de duração do seu ciclo?"
         android:textColor="@color/am_black"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="115dp" />
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="189dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
